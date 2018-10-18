@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DNExportWalletView" customModule="DoveNetwork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zaq-0f-rFt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5k-AS-F90" customClass="DNRoundView" customModule="DoveNetwork" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="260" width="375" height="417"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Export wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBR-SZ-0lP">
+                            <rect key="frame" x="20" y="17" width="335" height="35"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ah-rJ-OfQ">
+                            <rect key="frame" x="124.5" y="72" width="125" height="125"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr" translatesAutoresizingMaskIntoConstraints="NO" id="Wih-Y0-5gX">
+                                    <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="132-tS-vZ3"/>
+                                <constraint firstAttribute="bottom" secondItem="Wih-Y0-5gX" secondAttribute="bottom" id="NhL-2b-g3h"/>
+                                <constraint firstItem="Wih-Y0-5gX" firstAttribute="leading" secondItem="2Ah-rJ-OfQ" secondAttribute="leading" id="WYa-aK-P2Y"/>
+                                <constraint firstItem="Wih-Y0-5gX" firstAttribute="top" secondItem="2Ah-rJ-OfQ" secondAttribute="top" id="frN-uQ-sW3"/>
+                                <constraint firstAttribute="trailing" secondItem="Wih-Y0-5gX" secondAttribute="trailing" id="ihL-ik-r91"/>
+                                <constraint firstAttribute="height" constant="125" id="tW9-at-pyl"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPR-Xl-TAV" customClass="DNRoundView" customModule="DoveNetwork" customModuleProvider="target">
+                            <rect key="frame" x="20" y="217" width="335" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0XED565DWESD021DWWEWSDSDSTSD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05b-YQ-EhR">
+                                    <rect key="frame" x="2" y="2" width="331" height="41"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                    <color key="textColor" red="0.1450980392" green="0.16078431369999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="05b-YQ-EhR" firstAttribute="leading" secondItem="IPR-Xl-TAV" secondAttribute="leading" constant="2" id="QP1-Ds-iCr"/>
+                                <constraint firstAttribute="height" constant="45" id="Vqa-jZ-ciL"/>
+                                <constraint firstAttribute="bottom" secondItem="05b-YQ-EhR" secondAttribute="bottom" constant="2" id="aDO-LI-q4u"/>
+                                <constraint firstItem="05b-YQ-EhR" firstAttribute="top" secondItem="IPR-Xl-TAV" secondAttribute="top" constant="2" id="abc-hl-jKz"/>
+                                <constraint firstAttribute="trailing" secondItem="05b-YQ-EhR" secondAttribute="trailing" constant="2" id="wYt-4X-GNa"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hy-HE-XDx" customClass="DNCornerRadiusButton" customModule="DoveNetwork" customModuleProvider="target">
+                            <rect key="frame" x="20" y="282" width="335" height="45"/>
+                            <color key="backgroundColor" red="0.99215686274509807" green="0.67450980392156867" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="mV5-UT-rBX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                            <state key="normal" title="Copy address"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr1-1K-dkx" customClass="DNCornerRadiusButton" customModule="DoveNetwork" customModuleProvider="target">
+                            <rect key="frame" x="20" y="347" width="335" height="45"/>
+                            <color key="backgroundColor" red="0.20784313725490194" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="YuM-0f-m3Y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="btnCancelPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="S4x-tB-6bV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.12156862745098039" green="0.13333333333333333" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="GBR-SZ-0lP" secondAttribute="trailing" constant="20" id="02E-T6-R4p"/>
+                        <constraint firstAttribute="trailing" secondItem="zr1-1K-dkx" secondAttribute="trailing" constant="20" id="7uQ-QB-wrU"/>
+                        <constraint firstAttribute="bottom" secondItem="zr1-1K-dkx" secondAttribute="bottom" constant="25" id="B4f-dS-H8f"/>
+                        <constraint firstItem="IPR-Xl-TAV" firstAttribute="top" secondItem="2Ah-rJ-OfQ" secondAttribute="bottom" constant="20" id="Hko-xW-9T2"/>
+                        <constraint firstItem="5hy-HE-XDx" firstAttribute="leading" secondItem="b5k-AS-F90" secondAttribute="leading" constant="20" id="MYC-nr-Fux"/>
+                        <constraint firstItem="2Ah-rJ-OfQ" firstAttribute="centerX" secondItem="b5k-AS-F90" secondAttribute="centerX" id="QOP-fK-sow"/>
+                        <constraint firstItem="5hy-HE-XDx" firstAttribute="top" secondItem="IPR-Xl-TAV" secondAttribute="bottom" constant="20" id="RUG-ug-kBu"/>
+                        <constraint firstItem="GBR-SZ-0lP" firstAttribute="leading" secondItem="b5k-AS-F90" secondAttribute="leading" constant="20" id="ZAJ-Ff-Clf"/>
+                        <constraint firstAttribute="trailing" secondItem="IPR-Xl-TAV" secondAttribute="trailing" constant="20" id="cEh-4f-NuR"/>
+                        <constraint firstItem="GBR-SZ-0lP" firstAttribute="top" secondItem="b5k-AS-F90" secondAttribute="top" constant="17" id="cGF-N3-6CA"/>
+                        <constraint firstItem="2Ah-rJ-OfQ" firstAttribute="top" secondItem="GBR-SZ-0lP" secondAttribute="bottom" constant="20" id="dqW-K1-0jA"/>
+                        <constraint firstItem="zr1-1K-dkx" firstAttribute="top" secondItem="5hy-HE-XDx" secondAttribute="bottom" constant="20" id="esZ-JF-2vz"/>
+                        <constraint firstAttribute="trailing" secondItem="5hy-HE-XDx" secondAttribute="trailing" constant="20" id="hQm-RV-jFc"/>
+                        <constraint firstItem="zr1-1K-dkx" firstAttribute="leading" secondItem="b5k-AS-F90" secondAttribute="leading" constant="20" id="hvS-gw-V4y"/>
+                        <constraint firstItem="IPR-Xl-TAV" firstAttribute="leading" secondItem="b5k-AS-F90" secondAttribute="leading" constant="20" id="oqp-JT-Yuc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Zaq-0f-rFt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2gK-dK-sOg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zaq-0f-rFt" secondAttribute="trailing" id="6eO-ur-X9p"/>
+                <constraint firstItem="b5k-AS-F90" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Ks-yp-YVE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zaq-0f-rFt" secondAttribute="bottom" id="Xqj-6i-KZk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="b5k-AS-F90" secondAttribute="bottom" constant="-10" id="Zhh-Xs-dMd"/>
+                <constraint firstItem="Zaq-0f-rFt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZqG-Tt-0y7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b5k-AS-F90" secondAttribute="trailing" id="gIH-fl-qh1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnBG" destination="Zaq-0f-rFt" id="bAt-GV-i3k"/>
+                <outlet property="btnCancel" destination="zr1-1K-dkx" id="peF-LG-OI4"/>
+                <outlet property="btnCopyAddress" destination="5hy-HE-XDx" id="nN4-an-dsZ"/>
+                <outlet property="imgViewQR" destination="Wih-Y0-5gX" id="KHf-5p-RJC"/>
+                <outlet property="lblAddress" destination="05b-YQ-EhR" id="lf2-SN-7OO"/>
+            </connections>
+            <point key="canvasLocation" x="-203.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qr" width="128" height="128"/>
+    </resources>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DNWalletDeleteView" customModule="DoveNetwork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AH-Yj-vV8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkP-Mh-Giv" customClass="DNRoundView" customModule="DoveNetwork" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="377" width="375" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLJ-w7-C7e" customClass="DNCornerRadiusButton" customModule="DoveNetwork" customModuleProvider="target">
+                            <rect key="frame" x="20" y="175" width="335" height="45"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.34168134700000002" blue="0.75222279670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="W1T-3K-CQm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                            <state key="normal" title="Delete wallet"/>
+                            <connections>
+                                <action selector="btnDeleteWallet:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nhz-p1-pSO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw8-nT-z4K" customClass="DNCornerRadiusButton" customModule="DoveNetwork" customModuleProvider="target">
+                            <rect key="frame" x="20" y="230" width="335" height="45"/>
+                            <color key="backgroundColor" red="0.23529411759999999" green="0.27058823529999998" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="0Rd-ac-Aev"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="btnCancelTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="CAE-P8-DqL"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deleting this wallet will disable you from making transactions on the Dove network application. Do you want to continue?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOZ-kJ-HaB">
+                            <rect key="frame" x="20" y="78" width="335" height="67.5"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete wallet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Te-Vh-EZH">
+                            <rect key="frame" x="20" y="17" width="335" height="41"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="29"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1450980392" green="0.16078431369999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="OOZ-kJ-HaB" firstAttribute="leading" secondItem="hkP-Mh-Giv" secondAttribute="leading" constant="20" id="472-tf-NTl"/>
+                        <constraint firstItem="Yw8-nT-z4K" firstAttribute="top" secondItem="TLJ-w7-C7e" secondAttribute="bottom" constant="10" id="CqW-by-ePa"/>
+                        <constraint firstAttribute="trailing" secondItem="OOZ-kJ-HaB" secondAttribute="trailing" constant="20" id="Jpb-5x-Wk7"/>
+                        <constraint firstAttribute="trailing" secondItem="9Te-Vh-EZH" secondAttribute="trailing" constant="20" id="Qtd-84-Qcm"/>
+                        <constraint firstItem="TLJ-w7-C7e" firstAttribute="top" secondItem="OOZ-kJ-HaB" secondAttribute="bottom" constant="30" id="RQM-zh-gfj"/>
+                        <constraint firstAttribute="trailing" secondItem="Yw8-nT-z4K" secondAttribute="trailing" constant="20" id="UXa-Hk-8eU"/>
+                        <constraint firstItem="TLJ-w7-C7e" firstAttribute="leading" secondItem="hkP-Mh-Giv" secondAttribute="leading" constant="20" id="WNo-bO-Hkf"/>
+                        <constraint firstItem="Yw8-nT-z4K" firstAttribute="leading" secondItem="hkP-Mh-Giv" secondAttribute="leading" constant="20" id="X7u-JY-iDq"/>
+                        <constraint firstAttribute="bottom" secondItem="Yw8-nT-z4K" secondAttribute="bottom" constant="25" id="YK7-86-P1B"/>
+                        <constraint firstItem="9Te-Vh-EZH" firstAttribute="top" secondItem="hkP-Mh-Giv" secondAttribute="top" constant="17" id="bIr-8x-S78"/>
+                        <constraint firstItem="OOZ-kJ-HaB" firstAttribute="top" secondItem="9Te-Vh-EZH" secondAttribute="bottom" constant="20" id="hS3-f0-Goz"/>
+                        <constraint firstItem="9Te-Vh-EZH" firstAttribute="leading" secondItem="hkP-Mh-Giv" secondAttribute="leading" constant="20" id="jf8-C7-Zg7"/>
+                        <constraint firstAttribute="trailing" secondItem="TLJ-w7-C7e" secondAttribute="trailing" constant="20" id="lyr-ie-jr8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hkP-Mh-Giv" secondAttribute="trailing" id="6Wt-Wv-5ay"/>
+                <constraint firstItem="hkP-Mh-Giv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FZq-vt-mwK"/>
+                <constraint firstItem="5AH-Yj-vV8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VIr-xb-CCN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hkP-Mh-Giv" secondAttribute="bottom" constant="-10" id="XAd-pP-BWa"/>
+                <constraint firstItem="5AH-Yj-vV8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Z9J-tz-khX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5AH-Yj-vV8" secondAttribute="trailing" id="bed-KG-vwt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5AH-Yj-vV8" secondAttribute="bottom" id="zno-if-goe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="12" y="-182"/>
+        </view>
+    </objects>
+</document>
